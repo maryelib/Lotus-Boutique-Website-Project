@@ -61,6 +61,10 @@ main {
   main {
     margin: 0;
 }
+  section {
+    width: auto;
+  }
+  
   .img-logo {
   display: none;
 }
