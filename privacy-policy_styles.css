@@ -8,13 +8,49 @@ h1, h2 {
   font-weight: bold;
 }
 
-main {
+/*Navigation Bar*/
+ nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: #536162;
+ }
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  margin: 3em;
+  font-size: 1.3em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin: 0 1em 0 1em;
+}
+
+.nav-links a:hover, .nav-links a:visited {
+  color: #FFB6B6;
+}
+
+.img-logo {
+  cursor: pointer;
+}
+
+section {
   display: flex;
   flex-direction: column;
   text-align: center;
   box-shadow: 0 10px 40px 0 pink;
   line-height: 1.5;
   width: 50em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text {
