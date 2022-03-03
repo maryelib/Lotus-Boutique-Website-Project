@@ -1,0 +1,27 @@
+body {
+  font-family: 'Open Sans';
+  display: flex;
+  justify-content: center;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 10px 40px 0 pink;
+  line-height: 1.5;
+  width: 50em;
+}
+
+.text {
+  margin: 1em;
+}
+
+@media screen and (max-width: 540px) {
+  main {
+    margin: 0;
+}

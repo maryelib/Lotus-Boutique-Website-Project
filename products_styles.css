@@ -1,0 +1,128 @@
+body {
+  color: #536162;
+  display: flex;
+  flex-direction: column;
+}
+/*Navigation Bar*/
+ nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: #536162;
+ }
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  margin: 3em;
+  font-size: 1.3em;
+}
+.nav-links a {
+  text-decoration: none;
+  margin: 0 1em 0 1em;
+}
+.nav-links a:hover, .nav-links a:visited {
+  color: #FFB6B6;
+}
+
+.img-logo {
+  cursor: pointer;
+}
+
+/*Main Section*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+  background-color: lightcyan;
+}
+
+.top-right {
+  margin: 3.5em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Open Sans';
+}
+
+h3 {
+  margin: 1em 0 0;
+}
+
+p {
+  margin: 1.5em;
+}
+
+em {
+  font-family: 'Sacramento';
+  color: pink;
+  font-size: 2em;
+}
+/*Product Selection*/
+.middle-section {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "pink-pizazz orange-roses elegant-blush"
+    "classic-red spring-wonder custom";
+  grid-gap: 1.8rem;
+  height: 65em;
+}
+
+.flowers1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans';
+}
+
+button {
+  background-color: #AACFCF;
+  color: white;
+  font-weight: bold;
+  font-family: 'Quicksand';
+  border: 4px solid;
+  padding: 0.5em;
+  box-shadow: 0 0 20px 0 #aacfcf;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 780px) {
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-logo {
+    display: none;
+  }
+
+  .nav-links {
+    margin: 3em 0;
+  }
+}

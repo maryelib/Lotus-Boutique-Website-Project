@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link href="careers_styles.css" rel="stylesheet" />
+  <!--Google Font styles-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.jpg" alt="business-logo" class="img-logo" href="main.html"/>
+    </div>
+    <div class="nav-links">
+      <a href="careers.html">Careers</a>
+      <a href="products.html">Our Flowers</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+</header>
+  <main>
+    <h1>Interested in a Career at Lotus?</h1>
+    <h2>Fill out the form below!</h2>
+    <form action="submit-form.php" method="post">
+      <fieldset>
+        <div>
+          <label for="nameBox">Full Name</label>
+          <input type="text" id="nameBox" name="firstName" placeholder="Full Name" required/>
+          </div>
+        <div>
+           <label for="phoneBox">Phone Number</label>
+           <input name="custPhone" id="phoneBox" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+          </div>
+        <div>
+             <label for="emailBox">E-mail</label>
+             <input name="custPhone" id="emailBox" placeholder="example@gmail.com" required />
+            </div>
+         <div>
+           <label for="yearSL">How Did You Find Us?</label>
+           <select id="yearSL" name="year">
+              <option value="1">Indeed</option>
+              <option value="2">Social Media</option>
+              <option value="3">Previous Customer</option>
+              <option value="4">A friend</option>
+              <option value="5">Other</option>
+           </select>
+          </div>
+          <div>
+            <form action="/action_page.php">
+              <label class="resume"> Upload Resume</label>
+              <input type="file" id="myFile" name="filename">
+            </form>
+            </div>
+            <input type="submit" id="submit-button">
+        </fieldset>
+      </form>
+
+    </main>
+  </body>
+</html>

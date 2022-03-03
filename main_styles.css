@@ -1,0 +1,92 @@
+body {
+  color: #536162;
+}
+/*Navigation Bar*/
+ nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: #536162;
+ }
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  margin: 3em;
+  font-size: 1.3em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin: 0 1em 0 1em;
+}
+
+.nav-links a:hover, .nav-links a:visited {
+  color: #FFB6B6;
+}
+
+.img-logo {
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFC7C7;
+}
+
+h1 {
+  font-family: 'Quicksand';
+  color:white;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Sacramento';
+  color: white;
+  font-size: 3em;
+  margin: 0;
+}
+
+.section-left {
+  margin: 2em 6em 0;
+  text-align: center;
+}
+
+.order-button {
+  background-color: #F6F6F6;
+  color: grey;
+  border: 4px solid pink;
+  border-radius: 21px;
+  box-shadow: 0 10px 40px 0 #FDE2E2;
+  margin-top: 1em;
+  cursor: pointer;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  width: 10em;
+  padding: .7em;
+  font-size: 1em;
+}
+
+.order-button:hover {
+  background-color: #FDE2E2;
+  color: white;
+}
+
+/*Media*/
+@media screen and (max-width: 780px) {
+  .img-logo {
+    display: none;
+  }
+
+  .nav-links {
+    margin: 3em 0;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+}
