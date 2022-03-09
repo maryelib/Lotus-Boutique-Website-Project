@@ -58,12 +58,17 @@ fieldset {
  div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: 1em;
+  justify-content: space-between;
+  margin: .2em;
  }
 
 legend, .resume {
   margin-right: 1em;
+}
+
+textarea {
+  width: 300px;
+  height: 90px;
 }
 
 #submit-button {
