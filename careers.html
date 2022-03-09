@@ -26,7 +26,7 @@
   <main>
     <h1>Interested in a Career at Lotus?</h1>
     <h2>Fill out the form below!</h2>
-    <form action="submit-form.php" method="post">
+    <form method="post">
       <fieldset>
         <div>
           <label for="nameBox">Full Name</label>
@@ -37,9 +37,60 @@
            <input name="custPhone" id="phoneBox" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
           </div>
         <div>
-             <label for="emailBox">E-mail</label>
-             <input name="custPhone" id="emailBox" placeholder="example@gmail.com" required />
-            </div>
+            <label for="emailBox">E-mail</label>
+            <input name="custPhone" id="emailBox" placeholder="example@gmail.com" required />
+              </div>
+        <div>
+            <label for="age">Are You Authorized to work in the U.S.?</label>
+            <input name="orderType" id="age" type="checkbox">
+              </div>
+      <fieldset>
+        <legend>Which days are you available to work?</legend>
+        <div>
+            <label>Sunday</label>
+            <input name="sunday" value="full" type="radio">
+        </div>
+        <div>
+            <label>Monday</label>
+            <input name="monday" value="full" type="radio">
+        </div>
+        <div>
+            <label>Tuesday</label>
+            <input name="tuesday" value="full" type="radio">
+        </div>
+        <div>
+            <label>Wednesday</label>
+            <input name="wednesday" value="full" type="radio">
+        </div>
+        <div>
+            <label>Thursday</label>
+            <input name="thursday" value="full" type="radio">
+        </div>
+        <div>
+            <label>Friday</label>
+            <input name="friday" value="full" type="radio">
+        </div>
+        <div>
+            <label>Saturday</label>
+            <input name="saturday" value="full" type="radio">
+        </div>
+          </fieldset>
+        <div>
+          <label for="yearSL">Would you like to Full-time or Part-time?</label>
+          <select id="timeSL" name="time">
+             <option value="1">Full-time</option>
+             <option value="2">Part-time</option>
+          </select>
+              </div>
+        <div>
+            <label for="hoursBox">How many hours per week?</label>
+            <input name="hours" id="hoursBox" placeholder="25/week" required />
+              </div>
+        <div>
+          <legend>Tell us a little about yourself!</legend>
+          <textarea name="textBox" id="textBox"></textarea>
+              </div>
+
          <div>
            <label for="yearSL">How Did You Find Us?</label>
            <select id="yearSL" name="year">
@@ -56,10 +107,14 @@
               <input type="file" id="myFile" name="filename">
             </form>
             </div>
-            <input type="submit" id="submit-button">
+            <button type="button" onclick="clickAlert()" id="submit-button">Submit</button>
         </fieldset>
-      </form>
-
+        </form>
     </main>
   </body>
+  <script>
+      function clickAlert() {
+         alert("Successfully submitted!");
+   }
+</script>
 </html>
