@@ -1,4 +1,4 @@
-body {
+body { 
   font-family: 'Open Sans';
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@ main {
   section {
     width: 100%;
   }
-  
+
   .img-logo {
   display: none;
 }
