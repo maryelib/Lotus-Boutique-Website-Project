@@ -1,4 +1,4 @@
-body { 
+body {
   color: #536162;
 }
 /*Navigation Bar*/
@@ -76,6 +76,56 @@ h2 {
   color: white;
 }
 
+.bottom-container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  color: pink;
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5em;
+  text-align: center;
+  align-items: center;
+}
+
+.bottom-h1 {
+  color: pink;
+  font-size: 2em;
+  margin: 3em 0 1em;
+}
+
+.bottom-h2 {
+  color: pink;
+  font-size: 2em;
+}
+
+.order-button2 {
+  background-color: pink;
+  color: white;
+  border: 4px solid #EEEEEE;
+  border-radius: 21px;
+  box-shadow: 0 10px 40px 0 #FDE2E2;
+  margin-top: 1em;
+  cursor: pointer;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  width: 10em;
+  padding: .7em;
+  font-size: 1em;
+}
+
+.order-button2:hover {
+  background-color: #EEEEEE;
+  color: pink;
+  border: 4px solid pink;
+}
+
+video {
+  width: 45%;
+}
 /*Media*/
 @media screen and (max-width: 780px) {
   .img-logo {

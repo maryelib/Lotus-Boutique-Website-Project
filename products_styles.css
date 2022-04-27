@@ -1,4 +1,4 @@
-body { 
+body {
   color: #536162;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@ em {
   font-family: 'Open Sans';
 }
 
-button {
+#button {
   background-color: #AACFCF;
   color: white;
   font-weight: bold;

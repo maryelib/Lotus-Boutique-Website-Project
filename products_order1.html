@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link href="products_order1.css" rel="stylesheet" />
+  <script src="products_order1.js" async></script>
+  <!--Google Font styles-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&family=Sacramento&display=swap" rel="stylesheet">
+  <title>Lotus Floral Services</title>
+</head>
+
+
+  <header>
+  <nav>
+    <div class="nav-logo">
+      <a href="index.html"><img src="logo.jpg" alt="business-logo" class="img-logo"></a>
+    </div>
+    <div class="nav-links">
+        <a href="careers.html">Careers</a>
+        <a href="products.html">Our Flowers</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="about.html">About</a>
+    </div>
+  </nav>
+</header>
+<body>
+
+<section id="orderSection">
+      <form id="orderForm" name="orderForm" method="get" action="products_order2.html">
+        <table id="orderTable">
+           <h1>Bouquet Order</h1>
+           <tr>
+              <td colspan="3">
+                 <input type="text" id="orderDate" name="orderDate" readonly />
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <label for="bouquet">Bouquet</label>
+                 <select name="bouquet" id="bouquet">
+                    <option value="30.00">Pink Pizzaz ($30.00)</option>
+                    <option value="30.00" selected>Orange Blossom ($30.00)</option>
+                    <option value="30.00">Elegant Blush ($30.00)</option>
+                    <option value="30.00">Classic Red Roses ($30.00)</option>
+                    <option value="30.00">Spring Wonder ($30.00)</option>
+                    <option value="40.00">Custom Order ($40.00)</option>
+                 </select>
+                 <input type="hidden" id="bouquetName" name="bouquetName" />
+              </td>
+              <td class="rightA">
+                 <label for="qty">Qty</label>
+                 <select name="qty" id="qty">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                 </select>
+              </td>
+              <td>
+                 <input type="text" name="initialCost" id="initialCost" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">Tax (3%)</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">TOTAL</td>
+              <td>
+                 <input type="text" name="totalCost" id="totalCost" size="10" readonly />
+              </td>
+           </tr>
+        </table>
+        <input type="submit" id="buttonAdd" value="Add to Cart" />
+
+      </form>
+   </section>
+ </body>
+</html>

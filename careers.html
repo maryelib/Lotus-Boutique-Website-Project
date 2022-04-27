@@ -27,7 +27,7 @@
   <main>
     <h1>Interested in a Career at Lotus?</h1>
     <h2>Fill out the form below!</h2>
-    <form method="post">
+    <form name="careerForm" id="careerForm" method="post" action="index.html">
       <fieldset>
         <div>
           <label for="nameBox">Full Name</label>
@@ -35,11 +35,11 @@
           </div>
         <div>
            <label for="phoneBox">Phone Number</label>
-           <input name="custPhone" id="phoneBox" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+           <input name="custPhone" id="phoneBox" placeholder="(nnn) nnn-nnnn" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
           </div>
         <div>
             <label for="emailBox">E-mail</label>
-            <input name="custPhone" id="emailBox" placeholder="example@gmail.com" required />
+            <input name="custPhone" id="emailBox" placeholder="example@gmail.com" type="email" required />
               </div>
         <div>
             <label for="age">Are You Authorized to work in the U.S.?</label>
@@ -77,7 +77,7 @@
         </div>
           </fieldset>
         <div>
-          <label for="yearSL">Would you like to Full-time or Part-time?</label>
+          <label for="yearSL">Would you like to work Full-time or Part-time?</label>
           <select id="timeSL" name="time">
              <option value="1">Full-time</option>
              <option value="2">Part-time</option>
@@ -93,7 +93,7 @@
               </div>
 
          <div>
-           <label for="yearSL">How Did You Find Us?</label>
+           <label for="yearSL">How did you find us?</label>
            <select id="yearSL" name="year">
               <option value="1">Indeed</option>
               <option value="2">Social Media</option>
@@ -108,14 +108,9 @@
               <input type="file" id="myFile" name="filename">
             </form>
             </div>
-            <button type="button" onclick="clickAlert()" id="submit-button">Submit</button>
+            <input type="submit" id="submit-button" value="Submit" />
         </fieldset>
         </form>
     </main>
   </body>
-  <script>
-      function clickAlert() {
-         alert("Successfully submitted!");
-   }
-</script>
 </html>

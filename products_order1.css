@@ -1,0 +1,91 @@
+body {
+  color: #536162;
+  font-family: 'Open Sans';
+  font-weight: bold;
+}
+
+/*Navigation Bar*/
+ nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: #536162;
+ }
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  margin: 3em;
+  font-size: 1.3em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin: 0 1em 0 1em;
+  color: #F190B7;
+}
+
+.nav-links a:hover, .nav-links a:visited {
+  color: #FFB6B6;
+}
+
+.img-logo {
+  cursor: pointer;
+}
+/*Order Styling*/
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(background.jpg);
+}
+
+h1 {
+  font-family: 'Quicksand';
+  color: white;
+  font-size: 2em;
+  margin: 0;
+}
+
+form {
+  background-color: pink;
+  padding: 3em;
+  border: 5px solid lightgrey;
+}
+
+input, option {
+  border-radius: 5px;
+  border: 5px solid gainsboro;
+}
+
+#buttonAdd {
+  background-color: pink;
+  color: white;
+  font-weight: bold;
+  font-family: 'Quicksand';
+  border: 4px solid white;
+  padding: 1em;
+  margin: 1em 0;
+  box-shadow: 0 0 20px 0 gainsboro;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#buttonAdd:hover {
+  background-color: #fde2e2;
+}
+
+/*Media*/
+  @media screen and (max-width: 780px) {
+    .img-logo {
+      display: none;
+    }
+
+    .nav-links {
+      margin: 3em 0;
+    }
+  }
+}
