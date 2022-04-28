@@ -76,19 +76,6 @@ function validateYear() {
   } else {
       cardYear.setCustomValidity("");
   }
-}// Tests for a pattern mismatch
-// Create a custom validation message for card number
-function validateNumber() {
-  var cardNumber = document.getElementById("cardNumber");
-  if (cardNumber.validity.valueMissing) {
-      cardNumber.setCustomValidity("Enter your card number");
-  } else if (cardNumber.validity.patternMismatch) {
-      cardNumber.setCustomValidity("Enter a valid card number");
-  } else if (luhn(cardNumber.value) === false) {
-      cardNumber.setCustomValidity("Enter a legitimate card number");
-  } else {
-      cardNumber.setCustomValidity("");
-  }
 }
 // Create a custom validation message for credit card type
 function validateCredit() {
