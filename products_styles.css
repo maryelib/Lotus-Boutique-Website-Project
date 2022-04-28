@@ -91,7 +91,7 @@ em {
   font-family: 'Open Sans';
 }
 
-#button {
+.product-button {
   background-color: #AACFCF;
   color: white;
   font-weight: bold;
