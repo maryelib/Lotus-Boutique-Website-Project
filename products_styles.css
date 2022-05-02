@@ -24,7 +24,7 @@ body {
   margin: 0 1em 0 1em;
 }
 .nav-links a:hover, .nav-links a:visited {
-  color: #FFB6B6;
+  color: pink;
 }
 
 .img-logo {
