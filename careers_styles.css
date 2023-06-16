@@ -23,6 +23,7 @@ nav {
 .nav-links a {
   text-decoration: none;
   margin: 0 1em 0 1em;
+  color: #F190B7;
 }
 
 .nav-links a:hover, .nav-links a:visited {
